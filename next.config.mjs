@@ -21,6 +21,11 @@ const nextConfig = {
     parallelServerBuildTraces: true,
     parallelServerCompiles: true,
   },
+  // Static export for GitHub Pages
+  trailingSlash: true, // Ensures trailing slashes in URLs
+  basePath: '/Portfolio', // This should match your GitHub Pages URL path
+  assetPrefix: '/Portfolio', // Prefix for static assets
+  output: 'export', // Enable static export
 }
 
 mergeConfig(nextConfig, userConfig)
